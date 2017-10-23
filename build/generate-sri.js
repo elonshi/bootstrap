@@ -20,7 +20,7 @@ const sed = sh.sed
 
 sh.config.fatal = true
 
-const configFile = path.join(__dirname, '..', '_config.yml')
+const configFile = path.join(__dirname, '../docs/', 'config.yml')
 
 // Array of objects which holds the files to generate SRI hashes for.
 // `file` is the path from the root folder
@@ -35,11 +35,11 @@ const files = [
     configPropertyName: 'js_hash'
   },
   {
-    file: 'assets/js/vendor/jquery-slim.min.js',
+    file: 'docs/static/assets/js/vendor/jquery-slim.min.js',
     configPropertyName: 'jquery_hash'
   },
   {
-    file: 'assets/js/vendor/popper.min.js',
+    file: 'docs/static/assets/js/vendor/popper.min.js',
     configPropertyName: 'popper_hash'
   }
 ]
